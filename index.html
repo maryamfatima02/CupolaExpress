@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ISS Cupola • Earth from Space</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav__inner">
+      <div class="brand">
+        <div class="brand__logo" aria-hidden="true">
+          <img class="brand__logo-img" src="./images/cupola-icon.png" alt="Cupola logo"/>
+        </div>
+        <div class="brand__text">
+          <div class="brand__title">CUPOLA EXPRESS</div>
+          <div class="brand__subtitle">Your window to Earth</div>
+        </div>
+      </div>
+      <div class="tabs" role="tablist">
+        <a class="tab" data-target="#home" href="#home" role="tab">Home</a>
+        <a class="tab" data-target="#education" href="#education" role="tab">Education</a>
+        <a class="tab" data-target="#disaster" href="#disaster" role="tab">Disaster Prediction</a>
+        <a class="tab" data-target="#gallery" href="#gallery" role="tab">Gallery</a>
+      </div>
+      
+    </div>
+  </nav>
+
+  <main class="main">
+  <section id="home" class="section section--fullscreen" aria-labelledby="home-title">
+      <div id="three-root" class="three-root" aria-hidden="true"></div>
+      <div class="home-overlay home-overlay--top">
+        <h1 id="home-title" class="home-title">CUPOLA: WINDOW TO EARTH</h1>
+      </div>
+      <div class="home-help home-help--br"><span class="dot"></span>Drag to rotate • Scroll to zoom</div>
+      <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+        <div class="loading-text">Loading Earth View...</div>
+      </div>
+      <a id="play-game" class="play-btn" href="#education" role="button">PLAY GAME</a>
+      <div class="mascot">
+        <img src="./images/mascot.png" alt="Cupola mascot greeting"/>
+        <div class="mascot__speech">Welcome, Explorer!
+I’m your friendly ISS Mascot, orbiting right alongside the International Space Station. Get ready for a one-of-a-kind adventure above Earth—where you can view our amazing planet through the Cupola, track storms and sandstorms, and experience what it’s like to be an astronaut. Let’s discover the wonders of space and Earth together, one orbit at a time!</div>
+      </div>
+    </section>
+
+    <section id="education" class="section" aria-labelledby="edu-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="edu-title" class="section-title">THE CUPOLA</h2>
+          <p class="section-kicker">Earth's Guardian Window</p>
+        </header>
+
+        <div class="grid grid-2">
+          <div class="card media-card">
+            <img src="./images/interior-view.jpg" alt="ISS Cupola module interior view" class="media"/>
+            <div class="media-caption">
+              <div class="caption-title">ISS Cupola Module</div>
+              <div class="caption-sub">NASA Official Image</div>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Observatory in Space</h3>
+            <p class="card-text">The Cupola is a small module on the International Space Station with seven windows, providing astronauts with a 360-degree view of Earth and space. Installed in 2010, it serves as a crucial observation post for monitoring our planet. The International Space Station acts as a unique observatory in space, orbiting Earth about every 90 minutes. From this vantage point, astronauts and sensors have an uninterrupted, wide-angle view of our planet's weather, climate, and environmental changes. The ISS's Cupola window, along with high-resolution cameras and scientific instruments, allows for detailed observation of cloud formations, storms, dust plumes, and human-made events, providing critical context not possible from the ground.</p>
+          </div>
+        </div>
+
+        <h3 class="section-subtitle">Disaster Prediction & Preparation</h3>
+        <div class="grid grid-3">
+          <div class="card">
+            <h4 class="card-title">Real-Time Monitoring</h4>
+            <p class="card-text"> Orbiting above the atmosphere, the ISS and Earth-observing satellites deliver real-time monitoring of Earth's surface. These systems use visible, infrared, and microwave sensors to track changes as they happen—such as hurricanes forming, wildfires spreading, or floodwaters rising. The ability to gather and transmit data in near real time helps scientists, meteorologists, and emergency responders quickly understand what's unfolding and act accordingly.
+            </p>
+          </div>
+          <div class="card">
+            <h4 class="card-title">Emergency Response</h4>
+            <p class="card-text">Space-based observation is essential for emergency response. During disasters, satellite and ISS imagery reveals the scale and location of affected areas, even when roads are blocked or communications are down on the ground. This information guides rescue teams, delivers updated maps to relief agencies, and supports rapid coordination of international aid. Having a constantly updated, bird's-eye view often means faster, more effective responses and the saving of lives.</p>
+          </div>
+          <div class="card">
+            <h4 class="card-title">Historical Impact</h4>
+            <p class="card-text">Since 2010, the Cupola has contributed to monitoring major disasters, including hurricane systems, large bushfires, tsunamis, and transcontinental dust events, helping refine prediction models. Long-term historical observation from space has revolutionized our understanding of Earth's environment. Decades of imagery and data let scientists track changes in glaciers, coastlines, forests, and urban areas. This record shows patterns and trends, such as how disaster frequency and intensity shift over time, or how ecosystems recover after major events; helping humankind better plan for the future.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="disaster" class="section" aria-labelledby="disaster-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="disaster-title" class="section-title">Disaster Prediction</h2>
+          <p class="section-kicker">NASA imagery and context</p>
+        </header>
+        <div class="carousel" aria-roledescription="carousel">
+          <button class="carousel-btn prev" aria-label="Previous">‹</button>
+          <div class="carousel-track" id="disaster-track"></div>
+          <button class="carousel-btn next" aria-label="Next">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="gallery-title" class="section-title">Cupola Gallery</h2>
+          <p class="section-kicker">Breathtaking views from humanity's window to the world</p>
+        </header>
+
+        <div class="gallery-wrap">
+          <div id="gallery-grid" class="grid grid-3"></div>
+        </div>
+      </div>
+      <div id="lightbox" class="lightbox hidden" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <div class="lightbox__inner">
+          <img id="lightbox-img" alt="Selected NASA Cupola image"/>
+          <div class="lightbox__caption">
+            <h3 id="lightbox-title"></h3>
+            <p id="lightbox-desc"></p>
+          </div>
+          <button id="lightbox-close" class="lightbox__close" aria-label="Close">×</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="main.js"></script>
+  <noscript>This site requires JavaScript to display the interactive Earth and content.</noscript>
+</body>
+</html>
+
+
