@@ -37,3 +37,8 @@ Attribution summary
 
 Game:
 The 2D game, developed in Unity, lets users interact with Earth as seen from the ISS Cupola. Players receive warnings when satellite imagery indicates changes, and have a few seconds to identify the type of disaster based on what they’ve learned from the educational website. This gameplay reinforces disaster prediction skills using authentic space data, making learning immersive and engaging.
+
+To download the game for yourself, open this google drive and download the zip file from there and extract the contents:
+https://drive.google.com/file/d/19zV1tNxxoZYbNDcjmAxWpSvt8s0DXlm8/view?usp=drive_link
+
+How to use: open the .exe file and if you wish to exit the game, simply alt + f4 
