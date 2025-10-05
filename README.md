@@ -1,6 +1,7 @@
 Cupola Express: Your Window to Earth
 
 Interactive, portable web app showcasing an interactive Earth (Three.js), NASA Cupola imagery, and a disaster overview carousel.
+Our mission is to educate the public about Earth observation, inspire interest in science, and empower a new generation of problem solvers—supporting both global sustainability efforts and the UAE’s innovative vision for the future.
 
 Features:
 
@@ -34,8 +35,5 @@ Attribution summary
 - Imagery: NASA Image and Video Library (items linked above)
 - Earth textures: Three.js examples textures
 
-ISS Observatory Game Website
-
-Welcome to the ISS Observatory Game Website! This interactive platform lets users explore Earth through the eyes of astronauts aboard the International Space Station. Our 3D rotating globe features real NASA data, allowing visitors to observe natural disasters such as wildfires, tsunamis, floods, and sandstorms—all from a space perspective.
-
-Our mission is to educate the public about Earth observation, inspire interest in science, and empower a new generation of problem solvers—supporting both global sustainability efforts and the UAE’s innovative vision for the future.
+Game:
+The 2D game, developed in Unity, lets users interact with Earth as seen from the ISS Cupola. Players receive warnings when satellite imagery indicates changes, and have a few seconds to identify the type of disaster based on what they’ve learned from the educational website. This gameplay reinforces disaster prediction skills using authentic space data, making learning immersive and engaging.
