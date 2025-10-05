@@ -113,10 +113,10 @@ if (lightboxClose) {
 
 // Disaster carousel (local images only)
 const disasters = [
-  { name: 'Wildfires', local: './images/wildfire.jpg', text: 'From space: Wildfires show up as bright orange/red hotspots using thermal sensors, while thick brown or gray smoke plumes often stretch for hundreds of kilometers. Burn scars appear as dark patches contrasting with surrounding land. Key features: Long smoke trails, rapid expansion, thermal signatures even through clouds.' },
-  { name: 'Tsunamis', local: './images/tsunami.jpg', text: 'From space: The tsunami wave itself is hard to spot—but the aftermath is visible: changed coastlines, flooded land, debris fields. Satellite images taken before and after an event reveal the full extent of flooding and structural damage. Key features: Altered shoreline, inundated lowlands, sediment plumes spreading into the ocean.' },
-  { name: 'Floods', local: './images/flood.jpg', text: 'From space: Floodwaters turn land unusually dark or blue, expanding beyond normal riverbanks seen in pre-event images. Space imagery quickly outlines the true size of affected areas, even when clouds obscure the ground. Key features: Large swaths of darkened or shimmering area, water pooled in fields and urban landscapes.' },
-  { name: 'Sandstorms', local: './images/sandstorm.jpg', text: 'From space: Massive sand or dust storms appear as tan or yellowish clouds moving across continents. These plumes can be traced from their origin (like the Sahara) as they travel thousands of kilometers, sometimes crossing oceans. Key features: Thick, billowing clouds of dust, often obscuring the surface below, moving in distinct fronts or swirls.' }
+  { name: 'Wildfires', local: 'wildfire.jpg', text: 'From space: Wildfires show up as bright orange/red hotspots using thermal sensors, while thick brown or gray smoke plumes often stretch for hundreds of kilometers. Burn scars appear as dark patches contrasting with surrounding land. Key features: Long smoke trails, rapid expansion, thermal signatures even through clouds.' },
+  { name: 'Tsunamis', local: 'tsunami.jpg', text: 'From space: The tsunami wave itself is hard to spot—but the aftermath is visible: changed coastlines, flooded land, debris fields. Satellite images taken before and after an event reveal the full extent of flooding and structural damage. Key features: Altered shoreline, inundated lowlands, sediment plumes spreading into the ocean.' },
+  { name: 'Floods', local: 'flood.jpg', text: 'From space: Floodwaters turn land unusually dark or blue, expanding beyond normal riverbanks seen in pre-event images. Space imagery quickly outlines the true size of affected areas, even when clouds obscure the ground. Key features: Large swaths of darkened or shimmering area, water pooled in fields and urban landscapes.' },
+  { name: 'Sandstorms', local: 'sandstorm.jpg', text: 'From space: Massive sand or dust storms appear as tan or yellowish clouds moving across continents. These plumes can be traced from their origin (like the Sahara) as they travel thousands of kilometers, sometimes crossing oceans. Key features: Thick, billowing clouds of dust, often obscuring the surface below, moving in distinct fronts or swirls.' }
 ];
 
 const track = document.getElementById('disaster-track');
@@ -191,9 +191,9 @@ if (root && window.THREE) {
       textureLoader.load(remoteUrl, t2 => applyTex(key, t2));
     });
   }
-  loadWithFallback('assets/earth_atmos_2048.jpg', 'https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/textures/planets/earth_atmos_2048.jpg', 'map');
-  loadWithFallback('assets/earth_normal_2048.jpg', 'https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/textures/planets/earth_normal_2048.jpg', 'bumpMap');
-  loadWithFallback('assets/earth_specular_2048.jpg', 'https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/textures/planets/earth_specular_2048.jpg', 'specularMap');
+  loadWithFallback('earth_atmos_2048.jpg', 'https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/textures/planets/earth_atmos_2048.jpg', 'map');
+  loadWithFallback('earth_normal_2048.jpg', 'https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/textures/planets/earth_normal_2048.jpg', 'bumpMap');
+  loadWithFallback('earth_specular_2048.jpg', 'https://raw.githubusercontent.com/mrdoob/three.js/dev/examples/textures/planets/earth_specular_2048.jpg', 'specularMap');
   const earth = new THREE_NS.Mesh(earthGeometry, earthMaterial); scene.add(earth);
 
   // Raycaster and pointer state to detect hovering over the earth mesh
@@ -313,6 +313,7 @@ if (root && window.THREE) {
   }
   animate();
 }
+
 
 
 
