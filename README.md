@@ -1,4 +1,4 @@
-Cupola Express — Your Window to Earth
+Cupola Express: Your Window to Earth
 
 Interactive, portable web app showcasing an interactive Earth (Three.js), NASA Cupola imagery, and a disaster overview carousel.
 
