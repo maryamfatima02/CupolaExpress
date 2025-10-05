@@ -52,11 +52,11 @@ activateFromHash();
 
 // Gallery data (local images only)
 const galleryItems = [
-  { local: './images/earths-horizon.jpg', title: "Earth's Horizon", description: 'Curvature and atmosphere from Cupola' },
-  { local: './images/cupola-inner.jpg', title: 'Cupola Inner', description: 'Inside the seven-windowed observatory' },
-  { local: './images/cupola-sunset.jpg', title: 'Cupola Sunset', description: 'Sunset scenes from orbit' },
-  { local: './images/nanoracks-cupola.jpg', title: 'Nanoracks Cupola', description: 'Commercial research at the window' },
-  { local: './images/ISS-training.jpg', title: 'ISS Training', description: 'Astronaut training and preparation' }
+  { local: 'earths-horizon.jpg', title: "Earth's Horizon", description: 'Curvature and atmosphere from Cupola' },
+  { local: 'cupola-inner.jpg', title: 'Cupola Inner', description: 'Inside the seven-windowed observatory' },
+  { local: 'cupola-sunset.jpg', title: 'Cupola Sunset', description: 'Sunset scenes from orbit' },
+  { local: 'nanoracks-cupola.jpg', title: 'Nanoracks Cupola', description: 'Commercial research at the window' },
+  { local: 'ISS-training.jpg', title: 'ISS Training', description: 'Astronaut training and preparation' }
 ];
 
 const galleryGrid = document.getElementById('gallery-grid');
@@ -313,5 +313,6 @@ if (root && window.THREE) {
   }
   animate();
 }
+
 
 
